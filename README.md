@@ -9,3 +9,4 @@ A real time text editor written in JS.
 * Clone repository: `git clone https://github.com/svr8/HiveEditor.git`
 * Install packages by running this in root of project: `npm install`
 * Start server: `node index.js`
+* Use editor at URL: `localhost:8000`
