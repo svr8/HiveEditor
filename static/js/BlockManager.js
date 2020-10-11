@@ -6,7 +6,7 @@ class BlockManager {
      * can edit a block at a time. Insertion and Deletion operations on string in editor 
      * maintain track of blocks by wrapping these DOM elements inside <span class="block"> 
      * and </span> tags.
-     * @param {string} editorId used to selet root HTML element of editor
+     * @param {string} editorId - used to selet root HTML element of editor
      */
     constructor(editorId) {
         this.editorId = editorId;
@@ -19,8 +19,8 @@ class BlockManager {
 
     /**
      * returns the block with specified index.
-     * @param {number} index block index(0-based) to be retrieved
-     * @return {HTMLElement} block HTML element
+     * @param {number} index - block index(0-based) to be retrieved
+     * @return {HTMLElement} - block HTML element
      */
     get(index) {
         const blockList = this.#getBlockList();
@@ -33,8 +33,8 @@ class BlockManager {
 
     /**
      * sets given HTML content as content of the specified block.
-     * @param {number} index block index(0-based)
-     * @param {string} content HTML content that will be set
+     * @param {number} index - block index(0-based)
+     * @param {string} content - HTML content that will be set
      */
     setHTMLAt(index, content) {
         const blockList = this.#getBlockList();
@@ -45,7 +45,7 @@ class BlockManager {
     /**
      * insert a new block at given index in DOM.
      * moves the elements at index to right by 1 position.
-     * @param {number} index block index(0-based)
+     * @param {number} index - block index(0-based)
      */
     insert(index) {
         // create new block element
@@ -60,7 +60,7 @@ class BlockManager {
  
     /**
      * deletes specified block from DOM.
-     * @param {number} index block index(0-based)
+     * @param {number} index - block index(0-based)
      */
     delete(index) {
         const blockEl = this.get(index);

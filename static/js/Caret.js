@@ -6,9 +6,9 @@ class Caret {
 
     /**
      * This represents position visually, where a user is typing.
-     * @param {string} id unique identifier string
-     * @param {string} label title given by user
-     * @param {EditorPosition} pos position inside editor
+     * @param {string} id - unique identifier string
+     * @param {string} label - title given by user
+     * @param {EditorPosition} pos - position inside editor
      */
     constructor(id, label, pos) {
         this.id = id;
