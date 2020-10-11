@@ -22,6 +22,7 @@ class Caret {
      */
     setPos(pos) {
         this.#pos = pos;
+        // TODO - change DOM element
     }
 
     /**
