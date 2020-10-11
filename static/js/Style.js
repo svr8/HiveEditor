@@ -1,4 +1,4 @@
-"user strict";
+"use strict";
 
 class Style {
     /**
@@ -38,6 +38,8 @@ class Style {
         const found = this.hasCSS(cssClass);
         if(!found)
             this.classList.push(cssClass);
+        
+        // TODO - add DOM changes
     }
     /**
      * deletes given cssClass from this style if it exists.
@@ -50,5 +52,7 @@ class Style {
                 break;
             }
         }
+
+        // TODO - add DOM Changes
     }
 }

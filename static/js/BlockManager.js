@@ -44,7 +44,7 @@ class BlockManager {
 
     /**
      * insert a new block at given index in DOM.
-     * moves the elements at index to right by 1 position.
+     * moves the elements at given index to right by 1 position.
      * @param {number} index - block index(0-based)
      */
     insert(index) {
