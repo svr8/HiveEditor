@@ -33,7 +33,6 @@ class Style {
      * adds given cssClass to this style if it was not already added.
      * @param {string} cssClass - css class to be added
      */
-
     addCSS(cssClass) {
         const found = this.hasCSS(cssClass);
         if(!found)
@@ -41,6 +40,7 @@ class Style {
         
         // TODO - add DOM changes
     }
+
     /**
      * deletes given cssClass from this style if it exists.
      * @param {string} cssClass - css class to be deleted
